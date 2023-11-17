@@ -1,0 +1,248 @@
+h1, h2, h3 {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+}
+
+html {
+    width: 100% !important;
+    
+}
+body {
+    background-color: #a4c09cbe;
+    font-weight: bold;
+    color: #483018;
+}
+
+a {
+    color: #483018;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    width: 120px;   
+}
+
+.bg-mina {
+    background-color: #DCD18D;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Cambia el color del texto según tu preferencia */
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px; /* Grosor de la barra */
+    background-color: #000; /* Color de la barra */
+    transition: width 0.3s ease; /* Animación de la transición */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+
+.nav-text-style {
+    font-weight: 700;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 22px;
+    color: rgb(72, 48, 24);
+}
+
+#mobile {
+    display: none;
+}
+
+@media (max-width: 1480px) {
+    #mobile {
+        display: initial;
+    }
+    #window {
+        display: none;
+    }
+    #tlf {
+        width: 50px !important;
+        height: 50px !important;
+        right: 25px !important;
+        bottom: 25px !important;
+    }
+    #icotlf {
+        width: 30px;
+    }
+}
+
+.border {
+    border-bottom: 2px solid rgb(72, 48, 24) !important;
+}
+
+.object-fit {
+    object-fit: cover;
+    object-position: center center;
+}
+
+#carouselExampleIndicators, .carousel-inner {
+    max-height: 900px !important;
+}
+
+.vh-90 {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.titulos {
+    text-align: center;
+    padding: 35px;
+    border-top: 3px solid rgb(72, 48, 24) !important;
+    color: #483018;
+    background-color: #DCD18D;
+    box-shadow: -1px 4px 15px -2px #483018;;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 15px;
+}
+
+.card {
+    margin: 0 40px 70px 30px;
+    background-color: #DCD18D;
+    border: 3px solid rgb(72, 48, 24) !important;
+    padding: 5px;
+    box-shadow: -1px 4px 15px -2px #483018;
+}
+
+.card > img {
+    border: 2px solid rgb(72, 48, 24) !important;
+    max-height: 360px;
+}
+
+.iconos {
+    width: 80px;
+    position: absolute;
+    z-index: 1;
+    left: -30px;
+    top: -25px;
+    background-color: #DCD18D;
+    border: 3px solid #483018;
+    border-radius: 50%;
+}
+
+.x {
+    top: -70px;
+    left: 35%;
+}
+
+#extras {
+    margin: 90px 0px 0px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#extras > div {
+    position: relative;
+    border: #483018 solid 3px;
+    background-color: #DCD18D;
+    min-width: 255px;
+    max-width: 255px;
+    border-radius: 20px;
+    padding: 15px 20px 0px 20px;
+    margin:50px;
+    height: fit-content;
+    text-align: center;
+}
+
+#iframe {
+    margin: 60px;
+    text-align: center;
+}
+
+#iframe > iframe {
+    width: 60%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: -1px 4px 15px -2px #483018;;
+}
+
+.actividades {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    background-color:#8ab67ebe;
+    box-shadow: -1px 4px 15px -2px #483018;;
+}
+
+.actividades > div {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 1080px) {
+    #iframe > iframe {
+        width: 98%; 
+        height: 350px;
+    }
+    .actividades {
+        height: fit-content;
+    }
+}
+
+#tlf {
+    z-index: 2;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCD18D;
+    border: #483018 solid 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#tlf:hover {
+    background-color: #c0b671;
+}
+
+.imgmodal {
+    object-fit: cover; 
+    max-height: 90vh; 
+    margin: auto;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color:rgba(179, 179, 179, 0.527);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: black !important; /* Reemplaza "tu_color_aqui" con el color que prefieras */
+  }
+
+footer {
+    background-color: #483018;
+    color: #DCD18D !important;
+    text-align: center;
+    padding: 50px;
+    border-top: solid #DCD18D 2px;
+}
+
+footer > a {
+    color: #DCD18D !important;
+    text-decoration: none;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <title>Casa Mina</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script defer src="./js/galery.js"></script>
+    <title>Casa Mina</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .row {
+    margin-top: 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  .galery {
+    margin: 2.5px;
+    padding: 2.5px;
+    max-width: 600px !important;
+    min-width: 300px !important;
+
+  }
+
+  @media (max-width: 767px) {
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .carousel-inner .carousel-item img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .galery {
+      margin: 0px;
+      padding: 1px;
+      max-width: 230px !important;
+  }
+  .column {
+    min-width: 300px;
+  }
+  }
+</style>
+<body style="overflow-x: hidden;">
+    <nav id="window" class="navbar fixed-top navbar-expand-lg bg-mina border">
+        <div class="container-fluid">
+          <a style="margin-left: 150px;" href="#carouselExampleIndicators">
+            <img id="logo" src="images/casamina.jpg" alt="casamina">
+          </a>
+          <div style="margin-left: -150px;" class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link nav-text-style " aria-current="page" href="index.html#carouselExampleIndicators">Home</a>
+              <a class="nav-link nav-text-style" href="indexEN.html#informacion">Information</a>
+              <a class="nav-link nav-text-style" href="indexEN.html#ubicacion">Location</a>
+              <a class="nav-link nav-text-style active" href="#">Galery</a>
+              <a class="nav-link nav-text-style" href="indexEN.html#actividades">Activities</a>
+              <a class="nav-link nav-text-style" href="./galeriaEN.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+              </svg></a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <nav id="mobile" class="navbar bg-mina fixed-top border">
+        <div class="container-fluid">
+            <a class="d-flex justify-content-center w-100" href="#">
+                <img id="logo" src="images/casamina.jpg" alt="casamina">
+            </a>
+          <button style="position: absolute; right: 30px;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CASA MINA</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="indexEN.html#carouselExampleIndicators">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="indexEN.html#ubicacion">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="indexEN.html#informacion">Information</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="indexEN.html#actividades">Activities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./galeria.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                  </svg></a>
+                </li>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <a href="tel:+34618217160">
+      <div id="tlf">
+        <svg id="icotlf" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+      </div>
+    </a>
+    <section style="margin-top: 150px; ">
+        <div id="galeria" class="titulos">
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+          </svg>
+          <h1>Galery</h1>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="row">
+          <div class="column">
+            <img class="galery" src="./images/casa/1.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/chimenea.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/carousel.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/garden.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/8.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/11.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/14.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/17.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/20.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/23.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/26.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            
+          </div>
+          <div class="column">
+            <img class="galery" src="./images/casa/matrimonio.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/2.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/6.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/pool.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/9.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/12.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/15.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/18.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/21.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/24.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/27.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/30.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+          </div>
+          <div class="column">
+            <img class="galery" src="./images/casa/3.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/4.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/5.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/7.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/10.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/13.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/16.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/19.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/22.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/25.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/28.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+            <img class="galery" src="./images/casa/29.jpeg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div  class="modal fade" id="staticBackdrop" style="--bs-modal-width: 90%; --bs-modal-padding: 5px; " data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/casa/1.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/matrimonio.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/3.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/chimenea.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/2.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/4.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/carousel.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/6.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/5.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/garden.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/pool.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/7.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/8.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/9.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/10.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/11.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/12.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/13.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/14.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/15.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/16.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/17.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/18.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/19.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/20.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/21.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/22.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/23.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/24.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/25.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/26.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/27.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/28.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/29.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/casa/30.jpeg" class="d-block imgmodal" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+</body>
+<footer>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+      <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+      <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+    </svg> <a href="mailto:alejandromostazo39@gmail.com">alejandromostazo39@gmail.com</a>
+    <br>
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+      <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+      <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+    </svg> <a href="mailto:isabelgamez1963@gmail.com">isabelgamez1963@gmail.com</a>
+    <br>
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </svg> <a href="https://github.com/AlejandroMostazo?tab=repositories" target="_blank" rel="noopener noreferrer">Alejandro Mostazo</a>
+  </footer>
+</html>

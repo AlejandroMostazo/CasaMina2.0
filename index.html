@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <title>Casa Mina</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav id="window" class="navbar fixed-top navbar-expand-lg bg-mina border">
+            <div class="container-fluid">
+              <a style="margin-left: 150px;" href="#carouselExampleIndicators">
+                <img id="logo" src="images/casamina.jpg" alt="casamina">
+              </a>
+              <div style="margin-left: -150px;" class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link nav-text-style" aria-current="page" href="#carouselExampleIndicators">Home</a>
+                  <a class="nav-link nav-text-style" href="#informacion">Información</a>
+                  <a class="nav-link nav-text-style" href="#ubicacion">Ubicación</a>
+                  <a class="nav-link nav-text-style" href="galeria.html">Galería</a>
+                  <a class="nav-link nav-text-style" href="#actividades">Actividades</a>
+                  <a class="nav-link nav-text-style" href="./indexEN.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                  </svg></a>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <nav id="mobile" class="navbar bg-mina fixed-top border">
+            <div class="container-fluid">
+                <a class="d-flex justify-content-center w-100" href="#">
+                    <img id="logo" src="images/casamina.jpg" alt="casamina">
+                </a>
+              <button style="position: absolute; right: 30px;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CASA MINA</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#informacion">Información</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#actividades">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./indexEN.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                      </svg></a>
+                    </li>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <a href="tel:+34618217160">
+          <div id="tlf">
+            <svg id="icotlf" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </div>
+        </a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousel/WhatsApp Image 2023-08-25 at 16.50.03 (16).jpeg" class="vh-90 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/WhatsApp Image 2023-08-25 at 16.50.02 (5).jpeg" class="vh-90 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/WhatsApp Image 2023-08-25 at 16.50.03 (1).jpeg" class="vh-90 w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <section id="informacion">
+          <div  class="titulos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" style="margin-bottom: 20px;" height="55" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+            </svg>
+            <h1>Información de la casa </h1>
+          </div>
+          <div id="extras">
+            <div>
+              <img class="iconos x" src="images/extras/wifi.svg" alt="">
+              <div>
+                <p>Router con acceso a Internet Wi-Fi. ADSL de hasta 10Mb/s.</p>
+              </div>
+            </div>
+            <div>
+              <img class="iconos x" src="images/extras/antena.svg" alt="">
+              <div>
+                <p>Contamos con una parabólica para los canales extranjeros, además de los propios canales nativos.</p>
+              </div>
+            </div>
+            <div>
+              <img class="iconos x" src="images/extras/frio.svg" alt="">
+              <div>
+                <p>2 habitaciones cuentan con aire acondicionado. Además contamos con 2 neveras.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card" style="min-width: 300px; max-width: 500px;">
+              <img class="iconos" src="images/extras/room.svg" alt="">
+              <img src="images/casa/matrimonio.jpeg" class="card-img-top object-fit" alt="...">
+              <div class="card-body">
+                <p class="card-text">Hay 4 habitaciones, 3 baños + 1 en el exterior y 7 camas + 1 sofa cama. Capacidad para 10 personas.</p>
+              </div>
+            </div>
+            <div class="card" style="min-width: 300px; max-width: 500px;">
+              <img class="iconos" src="images/extras/barbacoa.svg" alt="">
+              <img src="images/casa/3.jpeg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <p class="card-text">La casa cuenta con una barbacoa, estan incluidos los utensilios básicos para su uso y la leña se podra incluir con un precio a parte.</p>
+              </div>
+            </div>
+            <div class="card" style="min-width: 300px; max-width: 500px;">
+              <img class="iconos" src="images/extras/pool.svg" alt="">
+              <img src="images/casa/pool.jpeg" class="card-img-top object-fit" alt="...">
+              <div class="card-body">
+                <p class="card-text">Recinto con piscina de 8x4x1.75m (parte menos profunda 1,4m) y una ducha.</p>
+              </div>
+            </div>
+            <div class="card" style="min-width: 300px; max-width: 505px;">
+              <img class="iconos" src="images/extras/beach.svg" alt="">
+              <img src="images/casa/faro.jpeg" class="card-img-top object-fit" alt="...">
+              <div class="card-body">
+                <p class="card-text">La playa más cercana es <a target="_blank" href="https://www.google.com/maps/dir/Los+Marines/Playa+de+Torre+del+Mar,+Paseo+Marítimo+de+Pte.,+2,+29740+Torre+del+Mar,+Málaga/@36.8349568,-4.2071613,12z/data=!4m14!4m13!1m5!1m1!1s0xd72687d9f08ad9b:0x886c89089d2dbb60!2m2!1d-4.2258258!2d36.9209272!1m5!1m1!1s0xd7247bdf0ff2241:0x8c8af67b9a4ebae7!2m2!1d-4.0911298!2d36.7393895!3e0?entry=ttu">Torre del mar</a>   a unos de 27KM (25 minutos en coche).</p>
+              </div>
+            </div>
+            <div class="card" style="min-width: 300px; max-width: 500px;">
+              <img class="iconos" src="images/extras/fireplace.svg" alt="">
+              <img src="images/casa/chimenea.jpeg" class="card-img-top object-fit" alt="...">
+              <div class="card-body">
+                <p class="card-text">En el salón principal hay una pequeña chimenea capaz de calentar todo el salón. La madera se incluirá con un precio a parte.</p>
+              </div>
+            </div>
+            <div class="card" style="min-width: 300px; max-width: 500px;">
+              <img class="iconos" src="images/extras/garden.svg" alt="">
+              <img src="images/casa/garden.jpeg" class="card-img-top object-fit" alt="...">
+              <div class="card-body">
+                <p class="card-text">Tenemos diferentes tipos de plantas alrededor de la casa, además de un columpio para los más pequeños.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="ubicacion" class="titulos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <h1>Ubicación</h1>
+          </div>
+          <div id="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35314.127369223694!2d-4.246175910949126!3d36.92127756738157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDU1JzE5LjQiTiA0wrAxMyc0Mi4yIlc!5e0!3m2!1ses!2ses!4v1626257341505!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </section>
+        <section>
+          <div id="actividades" class="titulos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+            </svg>
+            <h1>Actividades</h1>
+          </div>
+          <div class="actividades">
+            <img src="images/casa/bilo.jpeg" style="float: left; width: 40%; height: 400px;" class="object-fit" alt="">
+            <div>
+              <h3>
+                Baños de vilo
+              </h3>
+              <p>Los baños de vilo es una pileta de agua o balneario árabe que cuenta con unas extraordinarias aguas sulfhídricas, magnésico-cálcica y nitrogenadas, que brotan a 21 grados centígrados y cuyas propiedades curativas están especialmente indicadas para enfermedades de la piel.
+                Este está <a target="_blank" href="https://www.google.com/maps/place/Baños+de+Vilo/@36.9505082,-4.2065888,17z/data=!3m1!4b1!4m6!3m5!1s0xd7268c414183063:0xa59c52428e578e94!8m2!3d36.9505082!4d-4.2065888!16s%2Fg%2F11b8z7lzc_?entry=ttu">ubicado</a>  en Guaro a unos 2 km de Periana.</p>
+            </div>
+          </div>
+          <div class="actividades">
+            <div>
+              <h3>
+                Pantano de la Viñuela
+              </h3>
+              <p>Un embalse con capacidad de 170 hm³ y tiene 565 hectareas, es el embalse con mayor capacidad de Málaga. 
+                Se pueden practicar deportes náuticos, senderismo o realizar una barbacoa en <a target="_blank" href="https://www.google.com/maps/place/Romería+de+Periana/@36.9069941,-4.1930631,15z/data=!4m6!3m5!1s0xd726941cde9eedf:0xb7dd607ffb708538!8m2!3d36.9058281!4d-4.1894097!16s%2Fg%2F11nfvbfnxn?hl=es&entry=ttu">La romería de Periana</a> . 
+                También podrás encontrar restaurantes y además hay un camping cercano. Este está <a target="_blank" href="https://www.google.com/maps/place/Embalse+de+la+Viñuela/@36.8724852,-4.1571337,12.78z/data=!4m5!3m4!1s0xd7269dfa3cb3cfd:0xcd4a6c320ba8d55d!8m2!3d36.8785087!4d-4.1692941">ubicado</a>  cerca del pueblo La Viñuela y Los Romanes.</p>
+              </div>
+              <img src="images/casa/pantano.jpg" style="float:right; width: 40%; height: 400px;" class="object-fit" alt="">
+          </div>
+          <div class="actividades">
+            <img src="images/casa/puente.jpg" style="float:left; width: 40%; height: 400px;" class="object-fit" alt="">
+            <div>
+              <h3>
+                Puente colgante El saltillo
+              </h3>
+              <p>Un puente de 50m de longitud a una altura de 78m que ofrece unas vistas increibles, 
+                es el 3º puente más grande de España en espacios naturales y aqui además de este puente tambien hay varias rutas de senderismo por el monte.
+                Este está <a target="_blank" href="https://www.google.com/maps/dir//Pl.+De+La+Constitucion,+22,+29716+Canillas+de+Aceituno,+Málaga/@36.8735767,-4.1642138,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0xd72410a459698b7:0x85628191e47d25f1!2m2!1d-4.0818128!2d36.8736051?entry=ttu">ubicado</a> en el pueblo de Canillas de aceituno.</p>
+              </div>
+          </div>
+          <div class="actividades">
+            <div>
+              <h3>
+                Árboles milenarios
+              </h3>
+              <p>En esta ruta encontraras olivos con perimetro de 7.4, 5.5, 6.5 m entre otros, los cuales corresponden a 1500, 1000 y 1200 años de antiguedad. En su recorrido se disfruta de la huella que el tiempo ha dejado en estos olivos convirtiéndoles en verdaderas esculturas artísticas. Este está ubicado en el pueblo de Periana.</p>
+              </div>
+              <img src="images/casa/arbol.jpg" style="float:right; width: 40%; height: 400px;" class="object-fit" alt="">
+          </div>
+          <div class="actividades">
+            <img src="images/casa/camping.jpg" style="float:left; width: 40%; height: 400px;" class="object-fit" alt="">
+            <div>
+              <h3>
+                Restaurantes cercanos
+              </h3>
+              <p>El pueblo más cercano es Periana a 4km donde hay diferentes establecimientos donde comprar comida como el Día y varios restaurantes como lo es <a target="_blank" href="https://www.google.com/maps/place/Restaurante+Bar+Verdugo/@36.9272044,-4.1924885,17z/data=!3m1!4b1!4m6!3m5!1s0xd726901845ca4ab:0x94b9ac085da42075!8m2!3d36.9272001!4d-4.1899082!16s%2Fg%2F11bvv4w0sf?entry=ttu">"Bar Verdugo"</a>.
+                Otro establecimiento recomendado es <a target="_blank" href="https://maps.app.goo.gl/WgX1SyE6pmbeY5Ln6">"Rincón el Colorín"</a> que se encuentra en Alfarnatejo.
+                Además justo al lado del pantano de la viñuela tenemos 2 restaurantes <a href="https://maps.app.goo.gl/DfczcaouhFWsMxru5" target="_blank" rel="noopener noreferrer">"Asador el camping"</a>  y <a href="https://maps.app.goo.gl/ZAp5HEiyJw8SuHnH7" target="_blank" rel="noopener noreferrer">"Restaurante El Pantano"</a> 
+              </div>
+          </div>
+        </section>
+    </body>
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+      </svg> <a href="mailto:alejandromostazo39@gmail.com">alejandromostazo39@gmail.com</a>
+      <br>
+      <br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+      </svg> <a href="mailto:isabelgamez1963@gmail.com">isabelgamez1963@gmail.com</a>
+      <br>
+      <br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg> <a href="https://github.com/AlejandroMostazo?tab=repositories" target="_blank" rel="noopener noreferrer">Alejandro Mostazo</a>
+    </footer>
+</html>
